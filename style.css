@@ -52,7 +52,7 @@ nav {
 
 
 .menu a {
-    color: hsl(236, 13%, 42%) !important;
+    color: hsl(236, 13%, 42%);
     transition: 0.3s ease;
 }
 
