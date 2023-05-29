@@ -1,0 +1,346 @@
+body{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(36, 100%, 99%);
+}
+
+h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.container {
+    padding: 12px;
+    /* margin: 10px; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 25px;
+}
+
+.hamburger-menu,
+.close-menu { 
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%) !important;
+}
+
+
+.menu a {
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.drop-down-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: white;
+    /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    z-index: 99;
+}
+
+.drop-down-menu li {
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+.drop-down-menu a {
+    color: hsl(240, 100%, 5%);
+}
+
+.drop-down-menu a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+
+
+@media (max-width:800px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu { 
+        display: block;
+        position: absolute;
+        width: 27px;
+        height: 17px;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .close-menu {
+        display: none;
+        position: fixed;
+        width: 25px;
+        height: 25px;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 100;
+    }
+ 
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.bold-text {
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 1;
+}
+
+.first-text {
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.button {
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    border: 0;
+    padding: 13px 25px;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.button:hover {
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.cont-two {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 15px 15px 10px 15px;
+}
+
+.second-header {
+    color: hsl(35, 77%, 62%);
+    padding-bottom: 15px;
+}
+
+.second-text {
+    color: hsl(36, 100%, 99%);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+    opacity: 0.7;
+}
+
+.second-header-text h4 {
+    padding-bottom: 10px;
+}
+
+.second-header-text a {
+    color: white;
+}
+
+.second-header-text a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.line {
+    border: 0.1px solid white;
+    opacity: 0.6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.second-cont {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    
+}
+
+.flyer {
+    box-sizing: border-box;
+    display: flex;
+    padding-bottom: 40px;
+    max-width: 300px;
+    min-height: 145px;
+}
+
+.flyer img {
+    max-height: 147px;
+    max-width: 200px;
+}
+
+.flyer-text {
+    display: block;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+}
+
+.flyer-text h3 {
+    font-size: 14px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.flyer-text a {
+    color:  hsl(240, 100%, 5%);
+}
+
+.flyer-text a:hover {
+    color:  hsl(5, 85%, 63%);
+}
+
+.flyer-text p {
+    color: hsl(236, 13%, 42%);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.num {
+    font-size: 20px;
+    color: hsl(236, 13%, 42%);
+    font-weight: 700;
+    opacity: 0.5;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: hsl(36, 100%, 99%) !important;
+    }
+   
+    .container {
+        padding: 50px 70px 50px 70px;
+    }
+
+    nav {
+        padding-bottom: 30px;
+    }
+
+    .drop-down-menu {
+        display: none !important;
+    }
+
+    .close-menu, .hamburger-menu {
+        display: none !important;
+    }
+
+    .main-cont {
+        display: flex;
+        min-height: 450px;
+    }
+
+    .cont-one {
+        padding-right: 30px;
+    }
+
+    .desktop-img {
+        min-width: 100%;
+    }
+
+    .cont-two {
+        min-width: 35%;
+    }
+
+    .mini-cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 30px;
+    }
+
+    .bold-text {
+        padding-right: 10px;
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .second-header-text h3 {
+        font-size: 14px;
+    }
+
+    .second-text {
+        font-size: 12px;
+    }
+
+    .second-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+
+}
+
+@media screen and (min-width:1424px) {
+    .flyer {
+       min-width: 400px;
+    }
+} 
+
